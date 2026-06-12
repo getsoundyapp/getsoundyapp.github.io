@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ff5500" />
+
+  <title>Soundy — The free SoundCloud client for iPhone, iPad & Mac | Equalizer, no ads, no telemetry</title>
+  <meta name="description" content="Soundy is the free SoundCloud client for iPhone, iPad and Mac. Listen without ads, sync your likes and playlists, and tune every track with a 10-band equalizer and 22 iPod-style presets. No telemetry, no paid tier." />
+  <meta name="keywords" content="equalizer for soundcloud, soundcloud equalizer, soundcloud equalizer iphone, soundcloud equalizer ios, soundcloud equalizer mac, soundcloud music player, soundcloud client ios, free soundcloud equalizer, no ads soundcloud player, soundcloud bass booster, soundcloud cloud music player, soundcloud EQ app, soundcloud listening app, soundcloud player macOS" />
+  <meta name="author" content="Soundy" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="canonical" href="https://getsoundy.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Soundy" />
+  <meta property="og:title" content="Soundy — The free SoundCloud client for iPhone, iPad and Mac" />
+  <meta property="og:description" content="Listen to SoundCloud without ads. Sync your likes, playlists and following. Tune every track with a 10-band equalizer and 22 iPod-style presets. No telemetry, no paid tier." />
+  <meta property="og:url" content="https://getsoundy.app/" />
+  <meta property="og:image" content="https://getsoundy.app/assets/soundy-icon.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Soundy — The free SoundCloud client for iPhone, iPad and Mac" />
+  <meta name="twitter:description" content="Listen to SoundCloud without ads on iPhone, iPad and Mac. 10-band equalizer, 22 presets, AirPlay, background audio. No telemetry, no paid tier." />
+  <meta name="twitter:image" content="https://getsoundy.app/assets/soundy-icon.png" />
+
+  <!-- App Store smart banner -->
+  <meta name="apple-itunes-app" content="app-id=6778474045" />
+  <meta name="apple-mobile-web-app-title" content="Soundy" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="assets/soundy-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/soundy-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Styles -->
+  <link rel="preload" as="image" href="assets/soundy-icon.png" fetchpriority="high" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Soundy — Cloud Music Player + EQ for SoundCloud",
+    "alternateName": ["Soundy", "Soundy Equalizer", "Soundy for SoundCloud"],
+    "operatingSystem": "iOS 17, iPadOS 17, macOS",
+    "applicationCategory": "MusicApplication",
+    "applicationSubCategory": "Equalizer",
+    "description": "Soundy is a free, no-ads, privacy-focused SoundCloud cloud music player for iOS and macOS featuring a 10-band audio equalizer with 22 iPod-style presets, AirPlay, background playback, lock screen controls, and a SoundCloud-style waveform scrubber.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "downloadUrl": "https://apps.apple.com/us/app/soundy-cloud-music-player-eq/id6778474045",
+    "installUrl": "https://apps.apple.com/us/app/soundy-cloud-music-player-eq/id6778474045",
+    "url": "https://getsoundy.app/",
+    "image": "https://getsoundy.app/assets/soundy-icon.png",
+    "screenshot": "https://getsoundy.app/assets/soundy-icon.png",
+    "softwareVersion": "1.0",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "featureList": [
+      "10-band parametric audio equalizer",
+      "22 iPod-style EQ presets (Rock, Pop, Jazz, Classical, Bass Booster, and more)",
+      "SoundCloud cloud music player",
+      "Search tracks, artists, playlists, and albums",
+      "Personal library: Likes, Playlists, Albums, Following, Stations",
+      "Recently played and listening history",
+      "Apple Music-style mini player and full-screen player",
+      "SoundCloud-style waveform scrubber",
+      "Background audio playback",
+      "Lock screen and Control Center playback controls",
+      "AirPlay support",
+      "Playback queue with drag-to-reorder",
+      "Shuffle and repeat modes",
+      "Dark theme",
+      "No ads, no tracking, privacy focused"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "Soundy",
+      "url": "https://getsoundy.app/"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Soundy",
+    "url": "https://getsoundy.app/",
+    "logo": "https://getsoundy.app/assets/soundy-icon.png",
+    "email": "support@getsoundy.app",
+    "sameAs": [
+      "https://apps.apple.com/us/app/soundy-cloud-music-player-eq/id6778474045"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Soundy",
+    "url": "https://getsoundy.app/",
+    "description": "The official site of Soundy — a free, privacy-focused SoundCloud cloud music player and 10-band equalizer for iPhone, iPad, and Mac."
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Soundy a free SoundCloud equalizer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Soundy is 100% free to download and use. There are no ads, no in-app purchases required to enable the equalizer, and no paid tiers blocking core playback features."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Soundy work as an equalizer for SoundCloud on iPhone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Soundy runs on iPhone, iPad and Mac (iOS/iPadOS 17 and later, and macOS) and applies its 10-band equalizer in real time to every track you stream from SoundCloud."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What equalizer presets does Soundy include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Soundy ships with 22 iPod-style presets: Flat, Acoustic, Bass Booster, Bass Reducer, Classical, Dance, Deep, Electronic, Hip Hop, Jazz, Latin, Loudness, Lounge, Piano, Pop, R&B, Rock, Small Speakers, Spoken Word, Treble Booster, Treble Reducer, and Vocal Booster. You can also create your own custom curve."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Soundy show ads or track me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Soundy contains no advertising, no third-party analytics SDKs, and no behavioral tracking. Your SoundCloud sign-in token is stored securely in your device's Keychain and never sent to our servers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I play SoundCloud in the background or with the screen off?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Soundy supports background playback, lock screen controls, Control Center transport controls, AirPlay, and continues playing when you switch apps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a SoundCloud account to use Soundy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Soundy requires a SoundCloud account because SoundCloud's API only allows authorized access. If you don't have one yet, register for free at https://soundcloud.com/signup, then return to Soundy and tap 'Sign in with SoundCloud'."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Soundy support AirPlay and CarPlay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Soundy supports AirPlay out of the box, so you can stream to HomePod, Apple TV and AirPlay 2 speakers. CarPlay integration is on our roadmap."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Soundy different from the official SoundCloud app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Soundy is a third-party SoundCloud client focused on three things the official app doesn't offer: a real 10-band parametric equalizer with iPod-style presets, a completely ad-free interface, and zero behavioral tracking."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="bg-orb" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Soundy home">
+        <img src="assets/soundy-icon.png" alt="Soundy app icon" width="32" height="32" />
+        <span>Soundy</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+        <a class="nav-cta" href="https://apps.apple.com/us/app/soundy-cloud-music-player-eq/id6778474045" rel="noopener">Download</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+          Free · No ads · iOS · iPadOS · macOS · Liquid Glass
+        </div>
+
+        <img class="hero-icon" src="assets/soundy-icon.png" alt="Soundy — Equalizer for SoundCloud app icon" width="180" height="180" fetchpriority="high" />
+
+        <h1 id="hero-title">Soundy</h1>
+
+        <ul class="hero-bullets" aria-label="Soundy key features">
+          <li>
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <span>Listen to music from the cloud without ads on iPhone, iPad and Mac.</span>
+          </li>
+          <li>
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <span>10-band audio equalizer with 22 iPod-style presets like Rock, Jazz, Bass Booster, Vocal Booster, Classical and more.</span>
+          </li>
+          <li>
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <span>Background audio, AirPlay, lock-screen controls and control center.</span>
+          </li>
+          <li>
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <span>Sign in with your SoundCloud account, sync likes, playlists, following and listening history.</span>
+          </li>
+        </ul>
+
+        <a class="btn-download" href="https://apps.apple.com/us/app/soundy-cloud-music-player-eq/id6778474045" rel="noopener" aria-label="Download Soundy on the App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.86-3.08.41-1.09-.47-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.41C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          <span class="btn-sub">
+            <small>Download on the</small>
+            <span>App Store</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Features</span>
+          <h2 id="features-title">Everything you need in a modern cloud music player.</h2>
+          <p>Built natively in SwiftUI, so it's fast, smooth, and sounds great.</p>
+        </div>
+
+        <div class="features">
+          <article class="feature feature-main">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+            </div>
+            <h3>10-Band Audio Equalizer</h3>
+            <p>True parametric EQ from 32&nbsp;Hz to 16&nbsp;kHz with ±12&nbsp;dB gain per band, 22 iPod-style presets, and a real-time response curve.</p>
+          </article>
+
+          <article class="feature feature-main">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 1 2 2h1a2 2 0 0 1 2-2v-3a2 2 0 0 1-2-2H3z"/></svg>
+            </div>
+            <h3>Background Playback</h3>
+            <p>Keeps playing when you lock your device. Lock screen controls, Control Center, AirPlay and CarPlay-ready audio session.</p>
+          </article>
+
+          <article class="feature feature-main">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 7 12 12 15 14"/><path d="M17.5 8.5l1.5-1.5"/></svg>
+            </div>
+            <h3>Playback Speed Control</h3>
+            <p>Speed up or slow down any track from 0.5× to 2.0× without pitch artifacts — perfect for mixes, lectures, and practice.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16"/><path d="M8 8v12"/><path d="M12 6v14"/><path d="m16 6 4 14"/></svg>
+            </div>
+            <h3>Connect Your SoundCloud Library</h3>
+            <p>Sign in once to sync your Likes, Playlists, Albums and Following seamlessly across all your iPhone, iPad and Mac devices.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3>Native SwiftUI Music Player</h3>
+            <p>Built natively in SwiftUI for a fast, smooth, and reliable music player on iPhone, iPad, and Mac.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+            </div>
+            <h3>Apple Music-Style Player</h3>
+            <p>Tap the mini-player to grow it into a full-screen player with a smooth animation.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+            </div>
+            <h3>Smart Playback Queue</h3>
+            <p>Drag to reorder, swipe to remove, "Play Next" from anywhere, plus shuffle and repeat with one tap.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3>Powerful Search</h3>
+            <p>Real-time search across tracks, artists, playlists and albums, with sort options on every result list.</p>
+          </article>
+
+          <article class="feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            </div>
+            <h3>Privacy First</h3>
+            <p>No ads. No third-party trackers. Tokens stay in your device Keychain.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equalizer showcase -->
+    <section id="equalizer" aria-labelledby="eq-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">10-Band Equalizer</span>
+          <h2 id="eq-title">The best equalizer for SoundCloud.</h2>
+          <p>Tune every track from 32&nbsp;Hz sub-bass to 16&nbsp;kHz air. Pick a preset, dial in a custom curve, or let your favorite genre lead.</p>
+        </div>
+
+        <div class="eq-showcase">
+          <div class="eq-grid">
+            <div class="eq-text">
+              <h3>22 presets. Infinite custom curves.</h3>
+              <p>Soundy uses Apple's AVAudioEngine for true parametric equalization the same audio stack pro music apps rely on. Adjustments apply in real time with zero glitches.</p>
+
+              <div class="preset-tags" aria-label="Equalizer presets">
+                <span class="preset-tag">Flat</span>
+                <span class="preset-tag active">Rock</span>
+                <span class="preset-tag">Pop</span>
+                <span class="preset-tag">Jazz</span>
+                <span class="preset-tag">Classical</span>
+                <span class="preset-tag">Hip Hop</span>
+                <span class="preset-tag">R&amp;B</span>
+                <span class="preset-tag">Electronic</span>
+                <span class="preset-tag active">Dance</span>
+                <span class="preset-tag">Latin</span>
+                <span class="preset-tag">Acoustic</span>
+                <span class="preset-tag active">Bass Booster</span>
+                <span class="preset-tag">Bass Reducer</span>
+                <span class="preset-tag">Treble Booster</span>
+                <span class="preset-tag">Treble Reducer</span>
+                <span class="preset-tag active">Vocal Booster</span>
+                <span class="preset-tag">Spoken Word</span>
+                <span class="preset-tag">Loudness</span>
+                <span class="preset-tag">Lounge</span>
+                <span class="preset-tag active">Deep</span>
+                <span class="preset-tag">Piano</span>
+                <span class="preset-tag">Small Speakers</span>
+              </div>
+            </div>
+
+            <div class="eq-visual" aria-hidden="true">
+              <div class="eq-bars">
+                <span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span>
+                <span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span>
+                <span class="eq-bar"></span><span class="eq-bar"></span><span class="eq-bar"></span>
+                <span class="eq-bar"></span>
+              </div>
+              <div class="eq-freqs">
+                <span>32</span><span>64</span><span>125</span><span>250</span><span>500</span>
+                <span>1k</span><span>2k</span><span>4k</span><span>8k</span><span>16k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playback Speed showcase -->
+    <section id="speed" aria-labelledby="speed-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Playback Speed Control</span>
+          <h2 id="speed-title">Slow it down. Speed it up. Stay in pitch.</h2>
+          <p>Play any SoundCloud track from 0.5× to 2.0× without weird chipmunk vocals or muddy bass. Perfect for DJ practice, music transcription, language learning — or just savouring a long slow break.</p>
+        </div>
+
+        <div class="eq-showcase">
+          <div class="eq-grid">
+            <div class="eq-text">
+              <h3>9 speed presets. Pitch-preserving stretch.</h3>
+              <p>Soundy uses Apple's AVAudioEngine time-pitch unit — the same DSP that drives professional DAWs — so vocals, drums and synths stay perfectly on key whether you're cruising at half speed or sprinting at 2×. Switch presets instantly, or hold one and fine-tune the dial.</p>
+
+              <div class="preset-tags" aria-label="Playback speed presets">
+                <span class="preset-tag">0.5×</span>
+                <span class="preset-tag">0.6×</span>
+                <span class="preset-tag">0.75×</span>
+                <span class="preset-tag">0.85×</span>
+                <span class="preset-tag active">1.0× Normal</span>
+                <span class="preset-tag">1.1×</span>
+                <span class="preset-tag">1.25×</span>
+                <span class="preset-tag">1.5×</span>
+                <span class="preset-tag">1.75×</span>
+                <span class="preset-tag">2.0×</span>
+              </div>
+            </div>
+
+            <div class="eq-visual speed-visual" aria-hidden="true">
+              <div class="speed-pulses">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+
+              <div class="speed-readout">
+                <span class="speed-num"></span><span class="speed-x">×</span>
+              </div>
+
+              <div class="speed-track">
+                <div class="speed-track-fill"></div>
+                <div class="speed-track-dot"></div>
+              </div>
+
+              <div class="speed-labels">
+                <span>0.5×</span><span>1×</span><span>1.5×</span><span>2×</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Soundy / Privacy -->
+    <section id="privacy" class="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Why Soundy</span>
+          <h2 id="why-title">Cloud music player that respects you.</h2>
+        </div>
+
+        <div class="why-grid">
+          <ul class="why-list">
+            <li>
+              <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <div><strong>Zero ads, zero upsells.</strong><span>The full equalizer, every preset, every feature — free, with no banner ads or "go pro" walls.</span></div>
+            </li>
+            <li>
+              <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <div><strong>No analytics SDKs.</strong><span>We don't bundle Facebook, Google or any other third-party tracker. Your listening habits stay on your device.</span></div>
+            </li>
+            <li>
+              <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <div><strong>Secure SoundCloud OAuth.</strong><span>Sign-in happens directly with SoundCloud. The access token is stored in your iOS Keychain and never sent to external servers.</span></div>
+            </li>
+            <li>
+              <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <div><strong>100% native, SwiftUI.</strong><span>No bloated webview, no Electron, no cross-platform shim. Just smooth, native Apple performance.</span></div>
+            </li>
+            <li>
+              <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <div><strong>Tiny footprint, big sound.</strong><span>Lightweight bundle, low battery impact, and audio quality powered by Apple's AVAudioEngine.</span></div>
+            </li>
+          </ul>
+
+          <div class="why-visual">
+            <div class="lock-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            </div>
+            <h3 style="font-size:24px;margin-bottom:8px;">Your music, your data.</h3>
+            <p style="margin:0;">Soundy doesn't see who you follow, what you like, or what you play. There's nothing to see because we don't collect it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Get started in seconds</span>
+          <h2 id="how-title">How Soundy works</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <div class="step-num">1</div>
+            <h3>Download free</h3>
+            <p>Grab Soundy from the App Store on your iPhone, iPad or Mac.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">2</div>
+            <h3>Sign in with SoundCloud</h3>
+            <p>Use the official SoundCloud OAuth flow to securely connect your account.</p>
+          </article>
+          <article class="step">
+            <div class="step-num">3</div>
+            <h3>Tune your sound</h3>
+            <p>Pick a preset, dial in your own 10-band curve, and enjoy SoundCloud the way it was meant to sound.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">FAQ</span>
+          <h2 id="faq-title">Frequently asked questions</h2>
+          <p>Quick answers about Soundy, SoundCloud equalization, and what's free. Need more help? <a href="support.html">Visit our support page</a>.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-summary">Is Soundy a free SoundCloud equalizer?</summary>
+            <div class="faq-body">
+              <p>Yes. Soundy is 100% free to download and use. There are no ads, no in-app purchases required to enable the equalizer, and no paid tiers blocking core playback features.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">Does Soundy work as an equalizer for SoundCloud on iPhone?</summary>
+            <div class="faq-body">
+              <p>Yes. Soundy runs on iPhone, iPad and Mac (iOS&nbsp;18, iPadOS&nbsp;18 and macOS), and applies its 10-band equalizer in real time to every track you stream from SoundCloud.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">What equalizer presets does Soundy include?</summary>
+            <div class="faq-body">
+              <p>Soundy ships with 22 classic iPod-style presets: Flat, Acoustic, Bass Booster, Bass Reducer, Classical, Dance, Deep, Electronic, Hip Hop, Jazz, Latin, Loudness, Lounge, Piano, Pop, R&amp;B, Rock, Small Speakers, Spoken Word, Treble Booster, Treble Reducer and Vocal Booster. You can also create your own custom curve.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">Does Soundy show ads or track me?</summary>
+            <div class="faq-body">
+              <p>No. Soundy contains no advertising, no third-party analytics SDKs, and no behavioral tracking. Your SoundCloud sign-in token is stored securely in your device's Keychain and never sent to external servers.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">Can I play SoundCloud in the background or with the screen off?</summary>
+            <div class="faq-body">
+              <p>Yes. Soundy supports background playback, lock-screen controls, Control Center transport controls, AirPlay, and continues playing when you switch apps.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">Do I need a SoundCloud account to use Soundy?</summary>
+            <div class="faq-body">
+              <p>Yes. Soundy requires a SoundCloud account because SoundCloud's API only allows authorized access to its catalog. Once signed in, you'll get full access to your Likes, Playlists, Following, Albums, Stations, listening history and personalized recommendations.</p>
+              <p>Don't have an account yet? Register for free at <a href="https://soundcloud.com/signup" rel="noopener nofollow" target="_blank">soundcloud.com/signup</a>, then come back to Soundy and tap <strong>"Sign in with SoundCloud"</strong>.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">Does Soundy support AirPlay and CarPlay?</summary>
+            <div class="faq-body">
+              <p>Soundy supports AirPlay out of the box, so you can stream to HomePod, Apple TV and AirPlay 2 speakers. CarPlay integration is on our roadmap.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-summary">How is Soundy different from the official SoundCloud app?</summary>
+            <div class="faq-body">
+              <p>Soundy is a third-party SoundCloud client focused on three things the official app doesn't offer: a real 10-band parametric equalizer with iPod-style presets, a completely ad-free interface, and zero behavioral tracking.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-banner">
+          <h2 id="cta-title">Ready to make SoundCloud sound the way you want?</h2>
+          <p>Download Soundy free and turn on the equalizer in under a minute. iPhone, iPad and Mac.</p>
+          <a class="btn-download" href="https://apps.apple.com/us/app/soundy-cloud-music-player-eq/id6778474045" rel="noopener" aria-label="Download Soundy on the App Store">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.86-3.08.41-1.09-.47-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.41C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+            <span class="btn-sub">
+              <small>Download on the</small>
+              <span>App Store</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/soundy-icon.png" alt="" width="36" height="36" />
+            <strong>Soundy</strong>
+          </div>
+          <p class="footer-tag">Free, no-ads, privacy-focused cloud music player and 10-band equalizer for iPhone, iPad and Mac.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#equalizer">Equalizer</a></li>
+            <li><a href="#speed">Speed Control</a></li>
+            <li><a href="#privacy">Security</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="support.html">Support &amp; FAQ</a></li>
+            <li><a href="mailto:support@getsoundy.app">support@getsoundy.app</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Soundy. All rights reserved.</span>
+        <span class="disclaimer">Soundy is an independent third-party SoundCloud client. Not affiliated with, endorsed, or sponsored by SoundCloud Limited. SoundCloud is a trademark of SoundCloud Limited.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

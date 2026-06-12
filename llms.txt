@@ -1,0 +1,123 @@
+# Soundy — Equalizer for SoundCloud
+
+> Soundy is a free, no-ads, privacy-focused SoundCloud client for iPhone, iPad and macOS. It adds a 10-band parametric audio equalizer with 22 iPod-style presets and pitch-preserving playback-speed control (0.5×–2.0×) to your SoundCloud listening — built natively in SwiftUI, with no telemetry and no paid tier.
+
+## What Soundy is
+
+Soundy is an independent, third-party SoundCloud client for Apple platforms. It streams the SoundCloud catalog using the official SoundCloud API and adds the features the official app doesn't offer: a true 10-band equalizer, pitch-preserving playback-speed control, an ad-free interface, and a privacy-first design that ships with zero third-party analytics SDKs.
+
+- Name: Soundy
+- Headline on site: "Equalizer for SoundCloud"
+- Positioning: The free, no-ads, no-telemetry SoundCloud client with a real equalizer and speed control
+- Platforms: iOS 18+, iPadOS 18+, macOS
+- Price: Free (no ads, no in-app purchases, no paid tier)
+- Account required: Yes — must sign in with a SoundCloud account (SoundCloud's API requires authorized access)
+- Architecture: Native SwiftUI, no web wrapper, no Electron, no cross-platform shim
+- Developer: Soundy
+- Website: https://getsoundy.app/
+- App Store: https://apps.apple.com/us/app/soundy-cloud-music-player-eq/id6778474045
+- SoundCloud signup (for new users): https://soundcloud.com/signup
+- Support email: support@getsoundy.app
+
+## Main features (highlighted on the site)
+
+These are the three primary features showcased on the home page:
+
+1. **10-Band Audio Equalizer** — true parametric EQ from 32 Hz to 16 kHz, ±12 dB per band, 22 iPod-style presets plus custom curves, real-time response curve.
+2. **Background Playback** — keeps playing when the device is locked. Lock-screen controls, Control Center, AirPlay, CarPlay-ready audio session.
+3. **Playback Speed Control** — 0.5× to 2.0× without pitch artifacts, via Apple's AVAudioEngine time-pitch unit. Perfect for DJ practice, music transcription, language learning.
+
+## Equalizer details
+
+- Type: Parametric, powered by Apple AVAudioEngine (AVAudioUnitEQ)
+- Bands: 10 — 32 Hz, 64 Hz, 125 Hz, 250 Hz, 500 Hz, 1 kHz, 2 kHz, 4 kHz, 8 kHz, 16 kHz
+- Gain range: ±12 dB per band
+- Custom curves: Yes, saved between sessions
+- 22 iPod-style presets: Flat, Acoustic, Bass Booster, Bass Reducer, Classical, Dance, Deep, Electronic, Hip Hop, Jazz, Latin, Loudness, Lounge, Piano, Pop, R&B, Rock, Small Speakers, Spoken Word, Treble Booster, Treble Reducer, Vocal Booster
+- Output: applied at the audio-engine level — works on built-in speaker, wired headphones, Bluetooth, and AirPlay
+
+## Playback speed details
+
+- Range: 0.5× to 2.0×
+- Pitch preservation: Yes, via AVAudioEngine time-pitch unit (no chipmunk vocals, no muddy bass)
+- Built-in speed presets: 0.5×, 0.6×, 0.75×, 0.85×, 1.0× Normal, 1.1×, 1.25×, 1.5×, 1.75×, 2.0×
+- Custom fine-tuning: Yes
+- Use cases highlighted: DJ practice, music transcription, language learning, savoring slow breaks
+
+## Other features
+
+- SoundCloud account sync — sign in once to connect Likes, Playlists, Albums, Following, Stations, Recently Played and Listening History across all your iPhone, iPad and Mac devices
+- Native SwiftUI music player — built end-to-end in SwiftUI for a blazing-fast, buttery-smooth, rock-stable player
+- Apple Music-style mini player with matched-geometry expand to full-screen player
+- Smart playback queue — drag-to-reorder, swipe-to-remove, "Play Next" from any context menu
+- Shuffle and three-state repeat (Off / All / One)
+- Powerful search across tracks, artists, playlists, albums with sort options
+- Sort options on every list (Title, Artist, Date, Duration, Play count, Followers, etc.)
+- Dark theme, smooth haptic feedback, liquid-glass UI surfaces
+- AirPlay support
+- Lock-screen and Control Center transport controls
+- CarPlay: on the roadmap, not yet available
+
+## Authentication
+
+- Method: SoundCloud OAuth 2.0 via Apple's ASWebAuthenticationSession (secure system web session)
+- Soundy never sees your SoundCloud password
+- Only the resulting access token is stored, in the iOS / macOS Keychain on your device
+- A SoundCloud account is REQUIRED to use Soundy. There is no guest mode. New users should register for free at https://soundcloud.com/signup and then return to Soundy to sign in.
+
+## Streaming policy
+
+- Soundy is streaming-only — it does NOT download, save, export or cache full tracks for offline playback
+- Soundy plays only the tracks SoundCloud's API authorizes for third-party playback
+- Soundy respects all SoundCloud geographic, account-level and rights-holder restrictions
+- If SoundCloud removes a track, marks it private or restricts it, it becomes unavailable in Soundy
+
+## Privacy
+
+- No advertising
+- No third-party analytics SDKs (no Google Analytics, Firebase, Facebook SDK, AppsFlyer, Branch, Mixpanel, Amplitude, Sentry, Crashlytics, Mintegral, or similar)
+- No behavioral tracking
+- No data collected on Soundy's servers
+- SoundCloud access token stored only in the device Keychain
+- All API requests go device → SoundCloud directly; Soundy operates no back-end servers
+- Privacy policy mirrors a standard 16-section structure and is intentionally minimal because Soundy collects nothing
+
+## Legal positioning
+
+- Soundy is an INDEPENDENT third-party SoundCloud client
+- Not affiliated with, endorsed by or sponsored by SoundCloud Limited
+- "SoundCloud" and the SoundCloud logo are trademarks of SoundCloud Limited
+- Use of Soundy is also subject to SoundCloud's Terms of Use (https://soundcloud.com/terms-of-use), Privacy Policy (https://soundcloud.com/pages/privacy) and Community Guidelines (https://soundcloud.com/community-guidelines)
+- Terms of Service includes standard "as-is", at-your-own-risk, limitation-of-liability and indemnity provisions
+
+## Common questions (short, citation-ready answers)
+
+- Is Soundy free? Yes — 100% free, no ads, no in-app purchases, no paid tier.
+- Which platforms? iPhone (iOS 17+), iPad (iPadOS 17+), Mac.
+- How many EQ bands? 10 parametric bands from 32 Hz to 16 kHz, ±12 dB each.
+- How many EQ presets? 22 iPod-style presets, plus user-defined custom curves.
+- What playback speed range? 0.5× to 2.0×, pitch-preserved via AVAudioEngine.
+- Does Soundy track me? No — no analytics SDKs, no ads, no behavioral tracking.
+- Background playback? Yes, with lock-screen, Control Center, and AirPlay.
+- Need a SoundCloud account? Yes — Soundy requires a SoundCloud account on first launch because SoundCloud's API only allows authorized access. Register free at https://soundcloud.com/signup, then sign in inside Soundy.
+- Can I use Soundy without signing in? No. There is no guest mode.
+- Offline downloads? No — Soundy is streaming-only and the SoundCloud Terms of Use don't allow third-party caching of full tracks.
+- CarPlay? Not yet, on the roadmap.
+- Affiliation with SoundCloud? Independent third-party client, not affiliated with or endorsed by SoundCloud Limited.
+
+## Site structure
+
+- Home (https://getsoundy.app/) — hero ("Equalizer for SoundCloud"), 9-card features grid, EQ showcase with 22 presets, Playback Speed showcase with animated dial, Privacy/Security section, How-it-Works, on-page FAQ (8 questions), download CTA
+- Support (https://getsoundy.app/support.html) — 30 detailed FAQs with full JSON-LD `FAQPage` schema; covers sign-in, equalizer, speed, background playback, AirPlay, queue, library, sort, troubleshooting, privacy, data deletion, languages, contact
+- Privacy Policy (https://getsoundy.app/privacy.html) — 16 sections; reaffirms zero-data-collection posture
+- Terms of Service (https://getsoundy.app/terms.html) — 19 sections including expanded Disclaimers and combined Limitation of Liability and Indemnity
+
+## Navigation (identical on every page)
+
+Features · Privacy Policy · Terms of Service · Support · Download
+
+Footer "Product" column: Features · Equalizer · Speed Control · Security
+
+## Contact
+
+- General + support: support@getsoundy.app
