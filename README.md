@@ -1,7 +1,8 @@
-# Soundy — getsoundy.app
+# Soundy (getsoundy.app)
 
-Official marketing site for **Soundy — Equalizer for SoundCloud**, a free, no-ads,
-privacy-focused SoundCloud cloud music player for iPhone, iPad and macOS.
+Official marketing site for **Soundy: Equalizer for SoundCloud**, a free, no-ads,
+privacy-focused SoundCloud cloud music player for iPhone, iPad, Mac and CarPlay,
+with a 10-band equalizer, playback speed control and full CarPlay support.
 
 - App Store: <https://apps.apple.com/us/app/soundy-cloud-music-player-eq/id6778474045>
 - Support: <support@getsoundy.app>
@@ -15,6 +16,7 @@ privacy-focused SoundCloud cloud music player for iPhone, iPad and macOS.
 ├── privacy.html       # Privacy policy
 ├── terms.html         # Terms of service
 ├── 404.html           # Custom 404
+├── how-to/            # How-to guides hub + articles (equalizer, speed, mixed mode, CarPlay)
 ├── css/styles.css     # All styles
 ├── js/main.js         # FAQ accordion + mobile nav
 ├── assets/            # Images (icon, OG)

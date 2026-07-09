@@ -8,9 +8,39 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://getsoundy.app/assets/soundy-icon.png</image:loc>
-      <image:title>Soundy — Equalizer for SoundCloud</image:title>
-      <image:caption>Soundy app icon — free SoundCloud equalizer and cloud music player for iPhone, iPad and Mac</image:caption>
+      <image:title>Soundy: Equalizer for SoundCloud</image:title>
+      <image:caption>Soundy app icon: free SoundCloud equalizer and cloud music player for iPhone, iPad and Mac</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://getsoundy.app/how-to/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getsoundy.app/how-to/how-to-use-equalizer-for-soundcloud-iphone-ipad-mac.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://getsoundy.app/how-to/how-to-change-playback-speed-on-soundcloud-iphone-ipad-mac.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://getsoundy.app/how-to/how-to-mix-soundcloud-audio-with-other-apps-iphone-ipad-mac.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://getsoundy.app/how-to/how-to-use-soundcloud-with-carplay-iphone.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://getsoundy.app/support.html</loc>
